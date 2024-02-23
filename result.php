@@ -27,12 +27,28 @@
 <body>
 
     <div class="container my-5">
-        <h1>
-            <?= "Paragrafo: ".$paragraph ?> <br>
-            <?= "Parola da censurare: ".$censured_word ?>
+        <h1 class="text-danger">
+            <?= "Paragrafo: "?>
         </h1>
         <h2>
-            <?= "Numero Caratteri: ".$paragraph_length ?> <br>
+        <?= $paragraph ?> <br>
+        </h2>
+        <h1 class="text-danger">
+            <?= "Parola da censurare: " ?>
+        </h1>
+        <h2>
+            <?= $censured_word ?>
+        </h2>
+        <h1 class="text-danger">
+            <?= "Numero Caratteri: " ?>
+        </h1>
+        <h2>
+            <?= $paragraph_length ?>
+        </h2>
+        <h1 class="text-danger">
+            <?= "Paragrafo Censurato: " ?>
+        </h1>
+        <h2>
             <?= $censure ?>  
         </h2>
     </div>
